@@ -7,13 +7,14 @@ Prerequisites
 
 Setup Instructions
 1. Clone the Repository
-`git clone -b master <repository-url>
-`
-
-`
-cd <repository-name>
-`
-3. Install Dependencies
+     `git clone -b master <repository-url>
+     `
+     
+     `
+     cd <repository-name>
+     `
+   
+2. Install Dependencies
 Install dependencies for both the server and client: 
 - Backend (Express)
 `
@@ -31,7 +32,7 @@ npm install
 Ensure your SQL database is running.
 
  - Configure your database connection settings in server/config/config.json for Sequelize. Adjust database, username, password, and dialect (e.g., mysql, postgres).
-5. Running the Application
+4. Running the Application
 Open two terminal windows or tabs:
 - Start the Backend (Express Server)
 `
