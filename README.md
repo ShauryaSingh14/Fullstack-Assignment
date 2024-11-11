@@ -8,8 +8,12 @@ Prerequisites
 Setup Instructions
 1. Clone the Repository
 `git clone -b master <repository-url>
-cd <repository-name>`
-2. Install Dependencies
+`
+
+`
+cd <repository-name>
+`
+3. Install Dependencies
 Install dependencies for both the server and client: 
 - Backend (Express)
 `
