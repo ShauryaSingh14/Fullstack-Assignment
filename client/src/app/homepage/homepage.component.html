@@ -1,0 +1,40 @@
+<h1 style="color: #40514E;">Chemical Compounds</h1>
+
+<ul class="nav-links">
+  <li>
+    <button
+      [disabled]="currentPage === 0"
+      (click)="currentPage = currentPage - 1"
+      class="btns"
+    >
+      Previous
+    </button>
+  </li>
+  <li class="center">
+    <button class="btns" (click)="createNewCompound()">
+      Add New Compound
+    </button>
+  </li>
+  <li class="upward">
+    <button
+      [disabled]="currentPage === totalPages"
+      (click)="currentPage = currentPage + 1"
+      class="btns"
+    >
+      Next
+    </button>
+  </li>
+</ul>
+
+<div class="card-wrapper">
+  <div
+    class="card-list"
+    *ngFor="let data of rows | slice : currentPage * rowPerPage : (currentPage + 1) * rowPerPage"
+  >
+    <app-card
+      [routerLink]="['detail', data.chemical_id]"
+      [compound]="data"
+      [random]="data"
+    ></app-card> 
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="detail">
+  <h1>{{ obj.chemical_name }}</h1>  
+  <div class="btns back-btn"><button (click)="goBack()">Back</button></div>
+
+  <div class="content">
+    <img *ngIf="obj?.chemical_image" [src]="obj.chemical_image" />
+    <div class="description">  
+      <h3>Description</h3>    
+      <div>{{ obj.chemical_description }}</div>
+      <a
+        *ngIf="obj?.chemical_image_attribution"
+        [href]="obj.chemical_image_attribution"
+        >Read More....</a
+      >
+    </div>
+  </div>
+  <div class="btns">
+    <button (click)="deleteChemical()">DELETE</button>
+    <button (click)="updateChemical()">UPDATE</button>
+  </div>
+</div>

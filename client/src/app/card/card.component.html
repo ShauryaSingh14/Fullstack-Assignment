@@ -1,0 +1,10 @@
+<div class="card-container">
+  <div class="card">
+    <img
+      *ngIf="compound?.chemical_image"
+      [src]="compound.chemical_image"
+      [alt]="compound.chemical_name"
+    />
+    <h3>{{ compound.chemical_name }}</h3>
+  </div>
+</div>

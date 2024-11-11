@@ -1,0 +1,52 @@
+h1 {
+  text-shadow: 0.022em 0.022em 0.022em #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: fit-content;
+  height: 191px;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  max-height: 82vh;
+  overflow: scroll;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  font-size: 0.9em;
+  border-radius: 10px;
+  background-color: #00ADB5;
+  border: 1px solid #30E3CA;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  background: #40514E;
+  padding: 15px 10px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+}
+
+.nav-links li {
+  list-style: none;
+  margin: 0 12px;
+}
