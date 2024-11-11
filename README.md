@@ -7,7 +7,7 @@ Prerequisites
 
 Setup Instructions
 1. Clone the Repository
-`git clone master <repository-url>
+`git clone -b master <repository-url>
 cd <repository-name>`
 2. Install Dependencies
 Install dependencies for both the server and client: 
